@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.13;
 
-import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 
 contract Wrupee is ERC20 {
     address private owner;
 
-    constructor(address _address) is ERC20("Wrupee" , "WRU") {
+    constructor(address _address) ERC20("Wrupee" , "WRU") {
         owner = _address;
     }
 
